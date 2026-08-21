@@ -1,6 +1,6 @@
 # Template Product Kit Completion Packet
 
-Packet status: filled by Template Builder and accepted by independent local QA on 2026-08-21; post-build external gates remain pending.
+Packet status: complete on 2026-08-21 after independent QA, publication, clean public consumer smoke, operational cleanup, and monitoring intake.
 
 | Field | Answer |
 |---|---|
@@ -10,13 +10,13 @@ Packet status: filled by Template Builder and accepted by independent local QA o
 | Completion owner | `centrifugo_template_builder`; main thread owns integration and external gates |
 | Required kit pieces | README deploy path and env guide; operations; support boundary; issue intake; changelog/update; marketplace; labels/triage; legal/security/trademark — all present |
 | Repository assets | `README.md`, `CHANGELOG.md`, issue form/config, labels, `SECURITY.md`, `LICENSE`, `NOTICE.md`, `TRADEMARKS.md`, asset provenance, `Dockerfile`, `railway.json`, exact editor contract |
-| Runtime/user-path evidence | Passed corrected Railway proof: terminal success, health, isolation, API/JWT/Origin negatives, WSS delivery, restart/reconnect, logs, resource gates, cleanup. Fresh consumer deploy from public template remains required |
-| Support path evidence | Issue form, public issue routing, private security advisory URL, upstream discussion route, Railway help route, no-secrets warnings all packaged; links must be verified in real public repo |
+| Runtime/user-path evidence | Corrected platform proof and clean public consumer smoke passed terminal success, exact topology/config, generated-secret metadata, health, isolation, API/JWT/Origin negatives, WSS delivery, restart/reconnect, bounded logs/resources, and operational cleanup |
+| Support path evidence | Issue form, public issue routing, private security advisory URL, upstream discussion route, Railway help route, and no-secrets warnings are packaged and verified in the public repository |
 | Exceptions | Optional screenshot/UI capture only: original wrapper icon present; no screenshot accepted by Build Approval Packet and documented in `assets/README.md`; no other exception |
 | QA blocker status | Accepted after one fix cycle: two P1 documentation/contract findings corrected; re-audit returned zero local publish blockers |
-| Publish readiness | Listing copy, intended slug/button, fallback category, source version, service map, required origin, and asset exception prepared. Actual repo/draft/category/link inspection, publish approval, and public consumer smoke pending |
-| Monitoring intake | Same-day/7-day/30-day monitoring contract, metrics/support/source checks, resource cleanup, and product-kit adoption rows are main-thread post-publish work |
-| Main-thread ledger updates | Build/Publish Work Order; Product Kit Adoption; Active Subagent Registry; then Published Templates, monitoring contract, metrics snapshot, support contacts, managed resources, review dates, operating-loop and winner-cycle evidence after publish/smoke |
+| Publish readiness | Complete: public repo, draft/editor/category/slug/icon/links, approval, publication, marketplace discovery, and clean public consumer smoke verified |
+| Monitoring intake | Complete: same-day review, 7-day/30-day schedule, monitoring contract, baseline metrics/support/source checks, resource cleanup, and product-kit adoption |
+| Main-thread ledger updates | Complete: Build/Publish Work Order closed; Product Kit Adoption, subagent registry, Published Templates, monitoring contract, metrics, support contacts, managed resources, review dates, operating-loop, and winner-cycle evidence updated |
 | Compaction rule | After 30-day review, collapse detailed build/QA/smoke evidence to dashboard refs unless a gap or incident remains open |
 
 ## Completion evidence
@@ -55,15 +55,9 @@ Packet status: filled by Template Builder and accepted by independent local QA o
 - Update/rollback: immutable tag and digest change together; disposable proof required.
 - Claims: no HA, Redis, durable history, PRO, performance, cost, or endorsement promise.
 
-## Remaining workflow, not kit exceptions
+## Closed lifecycle gates
 
-These are lifecycle gates rather than missing repository assets:
-
-1. Public repository creation and root commit.
-2. Railway template draft configuration/inspection.
-3. Concrete publish approval packet.
-4. Public publication.
-5. Clean consumer smoke from the published template.
-6. Monitoring and support intake.
-
-The packet must not be marked publish-ready until those gates pass.
+The public repository, Railway draft inspection, publish approval, publication,
+clean public consumer smoke, cleanup, and monitoring/support intake all passed
+on 2026-08-21. Railway raw soft-delete records have scheduled literal-absence
+follow-ups on 2026-08-23; they do not represent active projects or spend.

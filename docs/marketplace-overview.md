@@ -1,24 +1,24 @@
 # Centrifugo Marketplace Listing Packet
 
-Status: copy complete for QA. Public repository, template draft inspection, publish approval, listing URL verification, and consumer smoke remain pending.
+Status: published and consumer-smoked on 2026-08-21. The public slug, listing fields, icon, source, deploy path, support routes, one-service contract, and operational cleanup are verified.
 
 ## Listing fields
 
 | Field | Proposed value |
 |---|---|
 | Title | Centrifugo on Railway |
-| Template code / intended slug | `centrifugo-on-railway` |
-| Category | `Other` as the previously verified fallback; select a current `Developer Tools`/realtime category only if the draft editor confirms it is valid |
+| Template code / public slug | `centrifugo-on-railway` |
+| Category | `Other` |
 | Short description | Single-node Centrifugo with private API access and generated secrets. |
-| Source repository | `https://github.com/l4time/railway-centrifugo-template` after QA |
+| Source repository | `https://github.com/l4time/railway-centrifugo-template` |
 | Upstream version | `6.9.2` |
 | Services | One `centrifugo` service |
 | Required user input | Exact allowed HTTPS client origin(s) |
 | Persistence | None; memory-engine state is ephemeral |
 | Asset plan | Original wrapper icon at `assets/icon.svg`; optional screenshot/UI-capture exception recorded in `assets/README.md` |
-| Public template URL | `https://railway.com/deploy/centrifugo-on-railway` after publish |
+| Public template URL | `https://railway.com/deploy/centrifugo-on-railway` |
 
-Refresh the category list and verify the generated public slug in the actual Railway editor. If Railway assigns a different slug, update every deploy-button link before publish; do not publish a dead or guessed link.
+Railway assigned the intended slug; the deploy-button links require no reconciliation.
 
 ## Marketplace overview copy
 
@@ -60,7 +60,7 @@ This is an unofficial community template and is not affiliated with or endorsed 
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/centrifugo-on-railway)
 
-QA must verify the actual published URL from a clean session before marking this button complete.
+The public code was deployed into a clean project and passed consumer smoke.
 
 ## Services-created copy
 
