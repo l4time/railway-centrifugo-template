@@ -12,7 +12,7 @@ Status: published and launch-ready on 2026-08-21. Independent QA, clean unpublis
 - [x] `railway.json` sets `/connection/init`, timeout `30`, and restart-on-failure policy.
 - [x] JSON parses locally.
 - [x] Independent QA validates Dockerfile syntax/build without source mutation.
-- [x] Public repository `main` contains the accepted package at commit `cb7d81114c6f87cff649d88b7e8c527e427b1097`.
+- [x] Public repository `main` contains the accepted package; public consumer smoke deployed runtime source commit `cb7d81114c6f87cff649d88b7e8c527e427b1097`.
 
 ## Railway service contract
 
