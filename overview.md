@@ -18,12 +18,22 @@ The template exposes authenticated client transports on port 8000 and keeps the 
 - A client application with an exact HTTPS origin and short-lived client JWT flow.
 - A durable backend datastore that remains the source of truth.
 
-### Implementation Details
+### Deployment Dependencies
+
+- Upstream image: `centrifugo/centrifugo:v6.9.2` pinned to the repository digest.
+- Source wrapper: `https://github.com/l4time/railway-centrifugo-template`.
+- Centrifugo and this wrapper use Apache-2.0 licensing; review the upstream repository for authoritative notices.
+
+## Implementation Details
 
 Enter exact client origins; never use a wildcard. The base subscription flag is not channel-level authorization. Sensitive or per-user channels require a separately configured and tested upstream authorization mechanism. Clients must reconnect, retry, resubscribe, and refresh authoritative state after interruptions. In-memory history may disappear on restart.
 
 ## Why Deploy Centrifugo on Railway?
 
 Railway supplies the service domain, TLS termination, deployment health gate, generated secret values, and private project networking for the proved one-node contract. Serverless remains disabled because long-lived realtime connections do not fit sleep and cold-start behavior.
+
+## Support Boundary
+
+Template support covers the one-service Railway deployment contract, generated-secret wiring, public/private listener split, and documented memory-engine path. Backend token issuance and channel authorization, external-backend ingress, application code, Redis/HA/brokers, custom proxies, PRO features, and performance or cost guarantees remain outside the package.
 
 This is an unofficial community template and is not affiliated with or endorsed by the Centrifugo maintainers.
