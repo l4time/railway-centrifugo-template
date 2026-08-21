@@ -6,7 +6,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
-- Public repository, Railway template draft, publish approval, and public consumer smoke are pending the separate QA/publish workflow.
+- No unreleased template changes.
 
 ## [2026-08-21]
 
@@ -25,6 +25,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - The exact digest reached terminal success in a disposable Railway proof with `PORT=8000`.
 - Public/internal isolation, valid and invalid API authentication, JWT and Origin rejection, WebSocket delivery, one restart/reconnect cycle, bounded logs, and low resource stop gates passed.
 - The proof project was removed from active inventory. These results justify the package contract; they are not a performance, availability, or cost guarantee.
+- Independent package/listing QA passed after documentation corrections.
+- The unpublished draft and the published `centrifugo-on-railway` template each reached terminal success in clean disposable projects.
+- The public consumer smoke repeated topology/config, generated-secret metadata, public/private isolation, API/JWT/Origin negatives, WebSocket delivery, and one restart/reconnect/new-delivery check.
+- Every disposable project was deleted from active inventory; Railway raw soft-delete literal-absence follow-ups remain scheduled under the portfolio's cleanup ledger.
 
 ### Rollback
 

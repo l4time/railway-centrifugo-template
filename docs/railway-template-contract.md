@@ -12,7 +12,7 @@ This is the exact contract the Railway template editor, QA Reviewer, and consume
 
 | Field | Required value |
 |---|---|
-| Repository | `https://github.com/l4time/railway-centrifugo-template` after QA creates it |
+| Repository | `https://github.com/l4time/railway-centrifugo-template` |
 | Branch | `main` |
 | Dockerfile | `/Dockerfile` |
 | Upstream image | `centrifugo/centrifugo:v6.9.2@sha256:f89352e38ef8043aaaa9045dec41cc8f2d35075b86ff553d4091ac19b547a3a6` |

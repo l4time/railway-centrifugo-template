@@ -1,6 +1,6 @@
 # Centrifugo Template Packaging Inventory
 
-Status: builder-complete local package; separate QA, public repository, Railway template draft, publish approval, consumer smoke, and monitoring intake are pending.
+Status: published and launch-ready on 2026-08-21 after independent QA, clean draft smoke, public consumer smoke, operational cleanup, and monitoring intake.
 
 ## Package
 
@@ -9,7 +9,7 @@ Status: builder-complete local package; separate QA, public repository, Railway 
 | Template code / candidate | `centrifugo-on-railway` / Centrifugo |
 | Product-kit version | `2026-07-04-v1` |
 | Source type | Public wrapper repository around an immutable public Docker image |
-| Intended source repository / branch | `https://github.com/l4time/railway-centrifugo-template` / `main`, created after local QA |
+| Source repository / branch | `https://github.com/l4time/railway-centrifugo-template` / `main` |
 | Dockerfile source | `centrifugo/centrifugo:v6.9.2@sha256:f89352e38ef8043aaaa9045dec41cc8f2d35075b86ff553d4091ac19b547a3a6` |
 | Upstream version | Centrifugo `6.9.2` |
 | Build method | Railway Dockerfile builder |
@@ -91,13 +91,13 @@ No real secret is required or generated at build time. No value is committed in 
 | Support boundary | `README.md`, issue routing | Complete |
 | Issue intake | `.github/ISSUE_TEMPLATE/bug_report.yml`, `config.yml` | Complete |
 | Changelog/update note | `CHANGELOG.md` | Complete |
-| Marketplace overview | `overview.md`, `docs/marketplace-overview.md` | Complete for QA |
+| Marketplace overview | `overview.md`, `docs/marketplace-overview.md` | Published and verified |
 | Support labels/triage | `.github/labels.yml` | Complete |
 | Legal/security/trademark | `LICENSE`, `NOTICE.md`, `TRADEMARKS.md`, `SECURITY.md` | Complete |
 | Assets/provenance | `assets/README.md` | Complete with accepted optional screenshot exception |
 | Railway config contract | `Dockerfile`, `railway.json`, `docs/railway-template-contract.md` | Complete |
 | Completion packet | `docs/product-kit-completion.md` | Filled |
-| QA checklist | `docs/qa-checklist.md` | Builder portion ready; independent QA pending |
+| QA checklist | `docs/qa-checklist.md` | Complete; independent QA zero blockers |
 
 ## Support boundary
 
@@ -129,12 +129,12 @@ User/upstream:
 | Proof cleanup | Operational cleanup passed; main dashboard owns grace-period follow-up |
 | Build approval | Approved |
 | Local package | Builder complete |
-| Independent local QA | Pending |
-| Public repository | Pending after QA |
-| Railway template draft | Pending after QA |
-| Concrete publish approval packet | Pending |
-| Public consumer smoke | Pending after publish |
-| Monitoring intake | Prepared by main thread after publish |
+| Independent local QA | Passed after corrective re-audits |
+| Public repository | Published at `https://github.com/l4time/railway-centrifugo-template` |
+| Railway template | Published as `centrifugo-on-railway` / `73621515-56bf-4385-a0d0-9aac57a83a77` |
+| Concrete publish approval packet | Approved and executed 2026-08-21 |
+| Public consumer smoke | Passed from the public code; operational cleanup verified |
+| Monitoring intake | Complete; 7-day review 2026-08-28 and 30-day review 2026-09-20 |
 
 ## Exceptions
 

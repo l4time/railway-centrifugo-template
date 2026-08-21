@@ -4,10 +4,10 @@ Status: original wrapper icon included because Railway requires a marketplace ic
 
 | Asset | Present | Source / owner | Permission status | Synthetic data | Freshness | Intended use |
 |---|---:|---|---|---:|---|---|
-| Railway deploy button | Remote badge only | Railway `https://railway.com/button.svg` | Used as Railway deployment-link UI | N/A | Verify at publish | Repository README |
+| Railway deploy button | Remote badge only | Railway `https://railway.com/button.svg` | Used as Railway deployment-link UI | N/A | Verified with public slug 2026-08-21 | Repository README |
 | Wrapper marketplace icon | Yes: `assets/icon.svg` | Original geometric SVG created for this repository on 2026-08-21 | Covered by this repository's Apache-2.0 wrapper license; contains no copied upstream logo or Railway mark | N/A | Review when visual identity changes | Railway template icon and repository asset |
-| Marketplace screenshot | No | N/A | Optional exception accepted in Build Approval Packet | N/A | Revisit after public consumer smoke | None initially |
-| Centrifugo logo | No | Upstream mark not copied | Avoided pending explicit asset/license and trademark review | N/A | N/A | None |
+| Marketplace screenshot | No | N/A | Optional exception accepted in Build Approval Packet | N/A | Post-smoke decision: not needed for launch | None |
+| Centrifugo logo | No | Upstream mark intentionally excluded | Not needed; avoids trademark/license ambiguity and upstream-endorsement implications | N/A | N/A | None |
 | Demo video/GIF | No | N/A | Not required for initial package | N/A | N/A | None |
 
 ## Accepted screenshot exception
@@ -16,7 +16,7 @@ The product kit `2026-07-04-v1` allows this candidate-specific exception:
 
 - The initial listing may omit screenshots and UI captures; Railway's required original wrapper icon is not a screenshot.
 - The marketplace overview, service map, memory-engine limits, and support boundary provide the product explanation.
-- A screenshot may be added only after the public consumer smoke produces a safe, stable view and its source and permission are recorded here.
+- Public consumer smoke passed without requiring a screenshot; any later screenshot must use a safe, stable synthetic view and record its source and permission here.
 - The absence of a screenshot must not be replaced by an upstream logo copied without provenance.
 
 No other product-kit exception is claimed.

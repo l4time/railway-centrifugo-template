@@ -7,7 +7,7 @@ Packet status: complete on 2026-08-21 after independent QA, publication, clean p
 | Template code / candidate | `centrifugo-on-railway` / Centrifugo |
 | Kit version | `2026-07-04-v1` |
 | Archetype / native-service pattern | Single stateless realtime app; one public app with separate internal listener, no stateful service |
-| Completion owner | `centrifugo_template_builder`; main thread owns integration and external gates |
+| Completion owner | `centrifugo_template_builder` for the package; main thread completed integration and lifecycle gates |
 | Required kit pieces | README deploy path and env guide; operations; support boundary; issue intake; changelog/update; marketplace; labels/triage; legal/security/trademark — all present |
 | Repository assets | `README.md`, `CHANGELOG.md`, issue form/config, labels, `SECURITY.md`, `LICENSE`, `NOTICE.md`, `TRADEMARKS.md`, asset provenance, `Dockerfile`, `railway.json`, exact editor contract |
 | Runtime/user-path evidence | Corrected platform proof and clean public consumer smoke passed terminal success, exact topology/config, generated-secret metadata, health, isolation, API/JWT/Origin negatives, WSS delivery, restart/reconnect, bounded logs/resources, and operational cleanup |

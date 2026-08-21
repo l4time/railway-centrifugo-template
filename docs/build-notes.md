@@ -1,6 +1,6 @@
 # Build Notes
 
-Status: local production package built from the approved Centrifugo Build Approval Packet. Separate QA, repository creation, Railway template draft, publish approval, public consumer smoke, and monitoring intake remain external gates.
+Status: production package published and launch-verified on 2026-08-21. Independent QA, repository creation, Railway template publication, clean public consumer smoke, operational cleanup, and monitoring intake passed.
 
 ## Design
 
@@ -87,15 +87,14 @@ Serverless is deliberately off. Long-lived realtime connections and predictable 
 
 None. The repository contains only secret generator expressions and secret type names. Real values are created by Railway at consumer deployment time and must not be added to source or documentation.
 
-## Publish blockers
+## Completed publication gates
 
-- Separate QA Reviewer has not yet accepted all builder-controlled checks.
-- Public repository and actual root commit do not yet exist.
-- Railway template draft variables/domain/Serverless configuration are not yet built or inspected.
-- Publish approval packet is not yet concrete.
-- Public consumer smoke has not yet followed the README from zero.
-- Deploy button and support/security links must be verified after the real public slug/repository exist.
-- Monitoring intake must be prepared before publish and finalized after consumer smoke.
+- Independent QA accepted the final package and launch-closure documentation.
+- The public repository, root package, support/security routes, and deploy button are verified.
+- Railway published the inspected one-service variable/domain/Serverless contract as `centrifugo-on-railway`.
+- The concrete Publish Approval Packet was executed through Railway CLI.
+- Clean draft and public consumer smokes passed the documented topology, security, delivery, restart, log, and resource gates.
+- Monitoring intake is complete; Railway raw soft-delete literal-absence follow-ups remain scheduled for 2026-08-23.
 
 The optional screenshot is the only accepted product-kit asset exception. It is recorded in `assets/README.md`.
 

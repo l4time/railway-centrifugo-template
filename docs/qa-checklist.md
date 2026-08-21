@@ -120,7 +120,7 @@ Status: published and launch-ready on 2026-08-21. Independent QA, clean unpublis
 ## Marketplace and publish
 
 - [x] Listing title, short description, overview, services-created copy, required-input copy, and first-run copy are prepared.
-- [x] Intended public slug and deploy button are included.
+- [x] Public slug `centrifugo-on-railway` and deploy button are included.
 - [x] Railway accepted and published the template in category `Other`.
 - [x] Original wrapper icon and no-screenshot/UI-capture exception are documented.
 - [x] Current Railway category `Other` is selected and recorded.
