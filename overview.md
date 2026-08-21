@@ -1,39 +1,29 @@
-# Deploy and Host Centrifugo with Railway
+# Deploy and Host Centrifugo on Railway
 
-Centrifugo is an open-source, language-agnostic realtime messaging server for adding authenticated WebSocket and related realtime transports to applications. This template deploys one digest-pinned Centrifugo `6.9.2` service with generated secrets, explicit browser origins, a Railway health check, and a deliberate public/internal port split.
+Centrifugo is an open-source realtime messaging server for authenticated WebSocket and related client transports. This template deploys one always-on Centrifugo 6.9.2 service from an image pinned by tag and digest.
 
-## What this template creates
+## About Hosting Centrifugo
 
-- One always-on `centrifugo` service.
-- Public authenticated client transports on port `8000`.
-- Private HTTP API, admin, and true-health surfaces on internal port `9000`.
-- Generated client HMAC, HTTP API, admin password, and admin-session secrets.
-- No database, Redis, volume, Bucket, gateway, worker, or scheduler.
+The template exposes authenticated client transports on port 8000 and keeps the HTTP API, admin, and true health listener private on port 9000. Railway generates the client HMAC, API key, admin password, and admin-session secret. The deployment uses the ephemeral memory engine and creates no database, Redis, volume, Bucket, gateway, worker, or scheduler.
 
-## Why use it
+## Common Use Cases
 
-Self-hosting an access-separated realtime node requires more than opening a WebSocket port. The public listener, private publish API, JWT signing, Origin enforcement, admin access, health checks, restart behavior, and delivery semantics must agree. This package captures the exact low-footprint contract proved on Railway while keeping insecure API/admin modes off.
+- Realtime application notifications and live status updates.
+- Collaborative UI updates backed by an authoritative application database.
+- Authenticated event delivery from a trusted backend to connected clients.
 
-## Required input
+## Dependencies for Centrifugo Hosting
 
-Provide the exact HTTPS origin or origins used by your client application. Wildcard origins are not a safe default and are not included.
+- A trusted backend in the same Railway project/private network for direct API publishing.
+- A client application with an exact HTTPS origin and short-lived client JWT flow.
+- A durable backend datastore that remains the source of truth.
 
-Your trusted application backend must issue client JWTs, publish through the private HTTP API, and remain the durable source of truth. Clients must reconnect, retry, resubscribe, and refresh state after interruptions.
+### Implementation Details
 
-Direct API publishing on port `9000` requires that backend to share the Centrifugo service's Railway project/private network. External backends need a separately secured and separately tested ingress design outside this template.
+Enter exact client origins; never use a wildcard. The base subscription flag is not channel-level authorization. Sensitive or per-user channels require a separately configured and tested upstream authorization mechanism. Clients must reconnect, retry, resubscribe, and refresh authoritative state after interruptions. In-memory history may disappear on restart.
 
-The enabled base-namespace subscription flag lets authenticated clients initiate subscriptions; it is not channel-level authorization. Sensitive, private, tenant, or per-user channels require an upstream-supported authorization mechanism or permissions model that the application configures and tests separately.
+## Why Deploy Centrifugo on Railway?
 
-## Persistence
+Railway supplies the service domain, TLS termination, deployment health gate, generated secret values, and private project networking for the proved one-node contract. Serverless remains disabled because long-lived realtime connections do not fit sleep and cold-start behavior.
 
-The default memory engine is ephemeral. Presence, publication history, and recovery state may disappear on restart or redeploy. This template is not a database or durable message queue and makes no durable-history, guaranteed-delivery, HA, Redis, or PRO promise.
-
-## Operating stance
-
-Railway Serverless is disabled because long-lived realtime connections do not fit sleep/cold-start behavior. The template is designed for one always-on node. It includes documented health, security, restart/reconnect, update, rollback, and support boundaries.
-
-## Support
-
-Template support covers the Railway deployment contract. Backend and channel authorization/token issuance, external-backend ingress, application code, Redis/HA/brokers, custom proxies, PRO, and performance guarantees remain outside the package.
-
-This is an unofficial template and is not endorsed by or affiliated with the Centrifugo maintainers.
+This is an unofficial community template and is not affiliated with or endorsed by the Centrifugo maintainers.

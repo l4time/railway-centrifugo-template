@@ -9,13 +9,13 @@ Status: copy complete for QA. Public repository, template draft inspection, publ
 | Title | Centrifugo on Railway |
 | Template code / intended slug | `centrifugo-on-railway` |
 | Category | `Other` as the previously verified fallback; select a current `Developer Tools`/realtime category only if the draft editor confirms it is valid |
-| Short description | Deploy one digest-pinned Centrifugo realtime node with generated secrets, explicit origins, separated public/private surfaces, and honest memory-engine limits. |
+| Short description | Single-node Centrifugo with private API access and generated secrets. |
 | Source repository | `https://github.com/l4time/railway-centrifugo-template` after QA |
 | Upstream version | `6.9.2` |
 | Services | One `centrifugo` service |
 | Required user input | Exact allowed HTTPS client origin(s) |
 | Persistence | None; memory-engine state is ephemeral |
-| Asset plan | Original wrapper icon; optional screenshot/UI-capture exception recorded in `assets/README.md` |
+| Asset plan | Original wrapper icon at `assets/icon.svg`; optional screenshot/UI-capture exception recorded in `assets/README.md` |
 | Public template URL | `https://railway.com/deploy/centrifugo-on-railway` after publish |
 
 Refresh the category list and verify the generated public slug in the actual Railway editor. If Railway assigns a different slug, update every deploy-button link before publish; do not publish a dead or guessed link.
