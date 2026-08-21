@@ -1,0 +1,30 @@
+- name: S0 security-data
+  color: B60205
+  description: Urgent security, secret exposure, or data-integrity risk
+- name: S1 deploy
+  color: D93F0B
+  description: Clean deploy, boot, health, routing, or public exposure failure
+- name: S2 docs-setup
+  color: FBCA04
+  description: Documentation, variables, first setup, or troubleshooting defect
+- name: S3 enhancement-upstream
+  color: 0E8A16
+  description: Enhancement request or upstream-dependent change
+- name: template bug
+  color: 5319E7
+  description: Reproducible defect in the Railway package or its documented contract
+- name: upstream
+  color: C5DEF5
+  description: Behavior owned by the upstream Centrifugo project
+- name: user config
+  color: D4C5F9
+  description: User application, origin, token, networking, or optional-feature configuration
+- name: security-private
+  color: B60205
+  description: Public placeholder only; details must move to a private advisory
+- name: duplicate
+  color: CCCCFF
+  description: Duplicate of an existing issue
+- name: needs reproduction
+  color: E99695
+  description: Requires a safe, minimal, reproducible example

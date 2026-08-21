@@ -1,0 +1,99 @@
+name: Template bug
+description: Report a reproducible defect in the Centrifugo on Railway package
+title: "[Template bug]: "
+labels:
+  - template bug
+  - S2 docs-setup
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve `centrifugo-on-railway`.
+
+        Do not post secrets, JWTs, API keys, passwords, cookies, private hostnames, full environment dumps, customer messages, or unredacted logs. Security vulnerabilities belong in a private security advisory, not this form.
+  - type: input
+    id: template_version
+    attributes:
+      label: Template/package version
+      description: Use the date/version from CHANGELOG.md or the wrapper commit.
+      placeholder: "2026-08-21 or commit SHA"
+    validations:
+      required: true
+  - type: input
+    id: upstream_version
+    attributes:
+      label: Centrifugo image tag and digest
+      description: Include both, but no credentials.
+      placeholder: "v6.9.2 and sha256:f893..."
+    validations:
+      required: true
+  - type: input
+    id: deploy_date
+    attributes:
+      label: Railway deploy date
+      description: Date and timezone are enough.
+      placeholder: "2026-08-21 UTC"
+    validations:
+      required: true
+  - type: input
+    id: services
+    attributes:
+      label: Railway services
+      description: The base template should contain one `centrifugo` service.
+      placeholder: "centrifugo"
+    validations:
+      required: true
+  - type: dropdown
+    id: serverless
+    attributes:
+      label: Is Railway Serverless disabled?
+      options:
+        - "Yes"
+        - "No"
+        - "Unknown"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should the documented template path do?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Start from a clean deployment when possible and keep the example synthetic.
+      placeholder: |
+        1. Deploy...
+        2. Configure...
+        3. Request...
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_logs
+    attributes:
+      label: Sanitized logs
+      description: Provide only the smallest relevant excerpt. Replace every secret, token, cookie, private hostname, user identifier, and message with `<redacted>`.
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Safety and scope confirmation
+      options:
+        - label: I removed secrets, JWTs, API keys, passwords, cookies, private hostnames, customer data, and unredacted logs.
+          required: true
+        - label: I checked that this concerns the Railway template contract rather than backend authorization code, client application code, Redis/HA, PRO, or general upstream behavior.
+          required: true
+        - label: I searched existing issues for a duplicate.
+          required: true

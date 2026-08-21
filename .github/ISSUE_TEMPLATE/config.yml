@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/l4time/railway-centrifugo-template/security/advisories/new
+    about: Report wrapper or template vulnerabilities privately. Never post secrets in a public issue.
+  - name: Upstream Centrifugo questions
+    url: https://github.com/centrifugal/centrifugo/discussions
+    about: Ask about upstream Centrifugo behavior, configuration, clients, engines, brokers, or PRO.
+  - name: Railway platform support
+    url: https://railway.com/help
+    about: Use Railway support for account, billing, platform, networking, or infrastructure incidents.
