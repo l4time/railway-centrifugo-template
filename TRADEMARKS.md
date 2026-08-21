@@ -9,4 +9,4 @@ This repository uses the name only to identify compatibility with the upstream o
 - An official Railway product or support channel.
 - A provider of Centrifugo PRO features, licenses, or support.
 
-Do not reuse upstream logos or brand artwork in marketplace assets unless their source, license or permission, and modification status are recorded in `assets/README.md`. Text-only marketplace presentation is the accepted initial asset exception.
+Do not reuse upstream logos or brand artwork in marketplace assets unless their source, license or permission, and modification status are recorded in `assets/README.md`. The initial marketplace presentation uses an original wrapper icon and the accepted no-screenshot/UI-capture exception.

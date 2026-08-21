@@ -12,7 +12,7 @@ Packet status: filled by Template Builder and accepted by independent local QA o
 | Repository assets | `README.md`, `CHANGELOG.md`, issue form/config, labels, `SECURITY.md`, `LICENSE`, `NOTICE.md`, `TRADEMARKS.md`, asset provenance, `Dockerfile`, `railway.json`, exact editor contract |
 | Runtime/user-path evidence | Passed corrected Railway proof: terminal success, health, isolation, API/JWT/Origin negatives, WSS delivery, restart/reconnect, logs, resource gates, cleanup. Fresh consumer deploy from public template remains required |
 | Support path evidence | Issue form, public issue routing, private security advisory URL, upstream discussion route, Railway help route, no-secrets warnings all packaged; links must be verified in real public repo |
-| Exceptions | Optional screenshot only: text-only initial listing accepted by Build Approval Packet and documented in `assets/README.md`; no other exception |
+| Exceptions | Optional screenshot/UI capture only: original wrapper icon present; no screenshot accepted by Build Approval Packet and documented in `assets/README.md`; no other exception |
 | QA blocker status | Accepted after one fix cycle: two P1 documentation/contract findings corrected; re-audit returned zero local publish blockers |
 | Publish readiness | Listing copy, intended slug/button, fallback category, source version, service map, required origin, and asset exception prepared. Actual repo/draft/category/link inspection, publish approval, and public consumer smoke pending |
 | Monitoring intake | Same-day/7-day/30-day monitoring contract, metrics/support/source checks, resource cleanup, and product-kit adoption rows are main-thread post-publish work |
@@ -32,7 +32,7 @@ Packet status: filled by Template Builder and accepted by independent local QA o
 | Marketplace overview | `overview.md`, marketplace packet | Complete for draft | Actual category/slug/button/listing review |
 | Support labels | `.github/labels.yml` | Complete | YAML and naming review |
 | Legal/security/trademark | Four root assets | Complete | License/notices/link review |
-| Screenshot/demo provenance | `assets/README.md` | Accepted exception | Confirm text-only listing is acceptable |
+| Screenshot/demo provenance | `assets/README.md`, `assets/icon.svg` | Original icon complete; screenshot exception accepted | Confirm icon URL and no-screenshot exception in the live listing |
 | Config-as-code | Dockerfile, railway.json, editor contract | Complete | Build/static and draft comparison |
 
 ## Runtime contract reconciliation

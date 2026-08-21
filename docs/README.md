@@ -11,7 +11,7 @@ This directory is the production handoff for template code `centrifugo-on-railwa
 - [Template inventory](template-inventory.md): filled source, service, variable, routing, persistence, update, and support inventory.
 - [Product-kit completion packet](product-kit-completion.md): filled `2026-07-04-v1` handoff and exception record.
 - [QA checklist](qa-checklist.md): builder checks, reviewer gates, consumer smoke, publish, and monitoring intake.
-- [Asset provenance](../assets/README.md): text-only listing exception and future screenshot rules.
+- [Asset provenance](../assets/README.md): original wrapper icon, screenshot/UI-capture exception, and future asset rules.
 
 The repository-level [README](../README.md) is the non-expert deployment and operating path. When documents disagree, the exact pinned image, approved build packet, and the Railway contract in this directory take precedence until the discrepancy is corrected.
 

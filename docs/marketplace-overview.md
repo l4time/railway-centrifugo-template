@@ -15,7 +15,7 @@ Status: copy complete for QA. Public repository, template draft inspection, publ
 | Services | One `centrifugo` service |
 | Required user input | Exact allowed HTTPS client origin(s) |
 | Persistence | None; memory-engine state is ephemeral |
-| Asset plan | Text-only initial listing; optional screenshot exception recorded in `assets/README.md` |
+| Asset plan | Original wrapper icon; optional screenshot/UI-capture exception recorded in `assets/README.md` |
 | Public template URL | `https://railway.com/deploy/centrifugo-on-railway` after publish |
 
 Refresh the category list and verify the generated public slug in the actual Railway editor. If Railway assigns a different slug, update every deploy-button link before publish; do not publish a dead or guessed link.
@@ -100,5 +100,5 @@ Do not say or imply:
 - Confirm user-path copy states the base subscription flag is not channel authorization and requires separate allowed/denied tests for sensitive channels.
 - Confirm the domain targets `8000` and Serverless is disabled.
 - Confirm the repo, support, security, and deploy links work.
-- Confirm the optional screenshot exception remains explicit if no asset is supplied.
+- Confirm the original wrapper icon loads and the optional screenshot/UI-capture exception remains explicit.
 - Confirm consumer smoke passes before monitoring intake closes.

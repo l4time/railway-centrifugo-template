@@ -138,7 +138,7 @@ User/upstream:
 
 ## Exceptions
 
-Only the optional screenshot exception is accepted. The initial listing is text-only, no upstream logo is copied, and provenance rules are recorded in `assets/README.md`. No other kit piece is removed or marked not applicable.
+Only the optional screenshot/UI-capture exception is accepted. The initial listing uses the original `assets/icon.svg` wrapper icon, no upstream logo is copied, and provenance rules are recorded in `assets/README.md`. No other kit piece is removed or marked not applicable.
 
 ## Publish blockers
 
