@@ -1,4 +1,4 @@
-# Deploy and Host Centrifugo on Railway
+# Centrifugo
 
 Centrifugo is an open-source realtime messaging server for authenticated WebSocket and related client transports. This template deploys one always-on Centrifugo 6.9.2 service from an image pinned by tag and digest.
 

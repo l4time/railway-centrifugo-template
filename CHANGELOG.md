@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Centrifugo on Railway template are recorded here.
+All notable changes to the Centrifugo Railway template are recorded here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the template uses explicit upstream version and digest pins rather than semantic versioning promises for the packaged application.
 

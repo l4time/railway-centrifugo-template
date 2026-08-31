@@ -6,7 +6,7 @@ Status: published and consumer-smoked on 2026-08-21. The public slug, listing fi
 
 | Field | Proposed value |
 |---|---|
-| Title | Centrifugo on Railway |
+| Title | Centrifugo |
 | Template code / public slug | `centrifugo-on-railway` |
 | Category | `Other` |
 | Short description | Single-node Centrifugo with private API access and generated secrets. |

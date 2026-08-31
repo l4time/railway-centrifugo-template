@@ -2,7 +2,7 @@
 
 ## Supported scope
 
-Security reports for this repository should concern the Centrifugo on Railway wrapper and deployment contract, including:
+Security reports for this repository should concern the Centrifugo Railway wrapper and deployment contract, including:
 
 - A package default that exposes the HTTP API, admin, health, metrics, debug, or Swagger surface publicly.
 - Missing or insecure Railway variable defaults.
